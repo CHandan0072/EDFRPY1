@@ -1,0 +1,35 @@
+# A
+n = eval(input("Enter a number: "))
+if n = 7:  # Error
+    print("The square is", n*2)
+# Corrected:
+if n == 7:
+    print("The square is", n*2)
+
+# B
+n = 6
+if n > 5 and < 9:  # Error: 'and' should have explicit conditions on both sides.
+    print("Yes")
+else:
+    print("No")
+# Corrected:
+if n > 5 and n < 9:
+    print("Yes")
+else:
+    print("No")
+
+# C
+major = "Computer Science"
+if major == "Engineering Technology" Or "Computer Technology"):  # Error: 'Or' should be 'or', and there is an extra closing parenthesis.
+    print("Yes")
+# Corrected:
+if major == "Engineering Technology" or major == "Computer Technology":
+    print("Yes")
+
+# D
+a, b = 1, 1.0
+if a = b:  # Error: Use '==' for comparison instead of '='.
+    print("same")
+# Corrected:
+if a == b:
+    print("same")

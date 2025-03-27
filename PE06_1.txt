@@ -1,0 +1,60 @@
+a, b, c = 2, 3, 0
+
+# A
+print(a ** b == b ** a) 
+# B
+print(a < b or b < a)
+# C
+print('dog' > 'cat' + 'mouse')
+# D
+print('Car' < 'Train')
+# E
+print((a == b) and ((a * a < b * b) or (b < a) and (2 * a < b)))
+# F
+print((a <= b) or ((a * a < b * b) or (b < a) and (2 * a < b)))
+# G
+print(not ((a < b) and (a < (b + a))))
+# H
+print("small" > "large" and (not c))
+# I
+print(isinstance(c, int))
+# J
+print(isinstance(3.14, float))
+# K
+if (a < b < c):
+    b = c + a
+else:
+    b = c * a
+print(b)
+# L
+if ('A' in 'apple'):
+    print("A as apple.")
+else:
+    print('Oops, not there.')
+# M
+x = 6
+if (x < 0):
+    print('negative')
+else:
+    if (x == 0):
+        print('zero')
+    else:
+        print('positive')
+# N
+n = 1
+if n <= 9:
+    print("Less than ten.")
+elif n == 1:
+    print("Equal to one.")
+# O
+let = input("Enter A, B or C: \n")
+let = let.upper()
+if (let == 'A'):
+    print('\nA, my name is Alice.')
+elif (let == 'B'):
+    print('\nTo be, or not to be.')
+elif (let == 'C'):
+    print('\nOh, say, can you see.')
+else:
+    print('\nInvalid letter.')
+

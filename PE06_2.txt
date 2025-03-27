@@ -1,0 +1,18 @@
+# Question 2: Determine a person's stage of life based on age
+
+age = 20  # Set your age here
+
+if age < 0:
+    print("DEAD.")
+elif age < 2:
+    print("You can't even talk")
+elif age < 4:
+    print("Annoying.")
+elif age < 13:
+    print("Tiktok.")
+elif age < 20:
+    print("Get married.")
+elif age < 65:
+    print("Time to sit home.")
+else:
+    print("Soon you gonna die.")

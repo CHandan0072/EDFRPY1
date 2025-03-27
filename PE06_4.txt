@@ -1,0 +1,13 @@
+#current usernames
+current_users = ['Yusuf', 'Aliyah', 'Ms.Bruce', 'Chandan', 'Annoying']
+
+# Get the username input
+user_input = input("Enter your user name: ").lower()  
+
+if user_input in [user.lower() for user in current_users]:  
+    print(f"Sorry {user_input.capitalize()}, that name is taken.")
+    print("Current users:", current_users)
+else:
+    current_users.append(user_input.capitalize())  
+    print(f"Great, {user_input.capitalize()} is still available.")
+    print("Updated users:", current_users)
