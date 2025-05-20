@@ -1,0 +1,43 @@
+# Question 1a: Define ETStudent class
+class ETStudent:
+    # Constructor to initialize student name and id
+    def __init__(self, name, student_id):
+        self.name = name
+        self.student_id = student_id
+
+# Question 1b: Method to display student info with prefix
+    def Student_display(self):
+        prefix = 'QCC-ET-'
+        print(f"Name: {self.name}")
+        print(f"Id: {prefix}{self.student_id}")
+
+# Question 1c: Create an instance and display info
+# Creating object with example values
+student1 = ETStudent("Your Name", 987654)
+
+# Calling the display method
+student1.Student_display()
+
+# Question 5: Request email input, write to file, print to console
+
+# Ask user for their QCC email
+email = input("Enter your email address: ")
+
+# Print to console with prefix
+print(f"QCC EMAIL: {email}")
+
+# Write the email to a text file
+with open("email.txt", "w") as file:
+    file.write(f"QCC EMAIL: {email}")
+
+print(f"\n('QCC EMAIL: {email}' also has been written to the email.txt)")
+
+In Python, instantiate means creating a real object from a class.
+When you instantiate a class, you are using its structure to build an actual working object in memory.
+For example, student1 = ETStudent("John", 123) is instantiating the class ETStudent with name and ID.
+
+A local variable is declared inside a function and can only be used within that function.
+A global variable is defined outside of all functions and can be accessed by any part of the code.
+If you want to change a global variable inside a function, you need to use the global keyword.
+
+
